@@ -88,23 +88,11 @@ CSS-Image-Gallery/
 └── README.md
 ```
 
-> Rename the files in the structure above if your actual repository uses
-> different filenames.
-
 ## Purpose
 
 This is a **learning mini project** created while studying CSS. It was
 mainly built to strengthen my understanding of layouts and CSS-based UI
 interactions rather than to create a production-ready website.
-
-## Future Improvements
-
--   Improve responsiveness for different screen sizes
--   Add smoother sidebar animations
--   Improve accessibility
--   Add more gallery images
--   Add JavaScript-based interactions
--   Add links and functionality to navigation items
 
 ## Disclaimer
 
