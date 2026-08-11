@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+body{
+    background-image: url("photo.jpg");
+    color: white;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.sidebarMenu{
+    width: 18%;
+    height: 100vh;
+    background-color: #30393e79;
+    box-shadow: 1px 0px 10px #53616e;
+    border-right: thin solid #08080a;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s linear;
+}
+input,.hamburger_open{
+    display: none;
+}
+.logo{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 3px 8px #53616e;
+    margin-bottom: 50px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+input:checked+label+.sidebarMenu{
+    transform: translateX(-999px);
+    position: absolute;
+}
+input:checked+.hamburger_open{
+    display: block;
+}
+input:checked ~ .image_container{
+    width: 80%;
+    height: 90vh;
+}
+.hamburger_close span, .hamburger_open span{
+    transition: all 0.2s ease;
+}
+.hamburger_close span:hover,.hamburger_open>span:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.hamburger_open{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+}
+.hamburger_open>span{
+    font-size: inherit;
+}
+.menu_list li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.menu_list li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    margin-left: 10px;
+}
+.menu_list li:hover{
+    box-shadow: 2px 2px 8px #53616e ;
+}
+.social_media{
+    text-align: center;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: 28px;
+}
+.social_media a{
+    display: inline-block;
+    margin-right: 10px;
+    color: #848c8c;
+}
+.social_media i{
+    transition: all 0.4s linear;
+}
+.social_media i:hover{
+    transform: scale(1.15);
+    color: white;
+    cursor: pointer;
+}
+.image_container{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    height: 900px;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+.image img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.image{
+    background-color: #30393eb6;
+    padding: 15px;
+    border-radius: 20px;
+}
