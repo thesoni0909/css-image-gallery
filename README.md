@@ -74,6 +74,29 @@ The project includes four nature-themed images:
 -   Colorful wildflower meadow
 -   Lotus garden
 
+  ## How to View the Project in a Browser
+
+You can run this project directly in your browser because it is a static HTML and CSS project.
+
+<b>Option 1:</b> Open the HTML file directly
+
+1. Download or clone this repository.
+2. Open the project folder.
+3. Double-click SidebarMenu.html.
+4. The project will open in your default browser.
+
+<b>Option 2:</b> Use VS Code Live Server
+
+For a better development experience:
+
+1. Open the project folder in VS Code.
+2. Install the Live Server extension if it is not already installed.
+3. Right-click SidebarMenu.html.
+4. Select Open with Live Server.
+5. The project will open in your browser.
+
+Make sure the HTML, CSS, and image files remain in the correct locations so that the styles and images load properly.
+
 ## Project Structure
 
 ``` text
@@ -85,6 +108,7 @@ CSS-Image-Gallery/
 ├── img2.jpg
 ├── img3.jpg
 ├── img4.jpg
+|__ photo.jpg
 └── README.md
 ```
 
